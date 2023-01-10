@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/rec1"
+    android:fillViewport="false">
+
+
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        app:autoSizeTextType="uniform"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="Contact App" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="-60dp"
+
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_gravity="center"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_name"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerInParent="true"
+        android:inputType="textPersonName|textEmailAddress"
+        android:maxLines="1"
+        android:hint="Name"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_phone"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textCapSentences|phone"
+        android:maxLines="1"
+        android:hint="Phone Number"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textEmailSubject"
+        android:maxLines="1"
+        android:hint="Email"/>
+
+
+
+
+    <Spinner
+        android:id="@+id/edt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:entries="@array/spinner_array"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_address"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textLongMessage"
+        android:maxLines="1"
+        android:hint="Adress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_birth_date"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="date"
+        android:maxLines="1"
+        android:hint="Birth Date"   />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_social_media"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textCapSentences|textEmailSubject"
+        android:maxLines="1"
+        android:hint="Social Media"/>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:text="Save" />
+
+</LinearLayout>
